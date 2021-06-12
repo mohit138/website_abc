@@ -28,11 +28,11 @@ const Header = (props) => {
       <Navbar color="dark" dark expand="md">
         <div  className="container" >
         <NavbarBrand className="mr-auto " href="/">
-        <img src={logo} height="50" width="34" alt="ABC Power" />
-            <span className='nav-head'>ABC Power</span>
+        <img src={logo} className='nav-logo' alt="ABC Power" />
+            <span className='nav-head'>ABC POWER SYSTEMS</span>
         </NavbarBrand>
-        <Button href="/products" className="d-md-none">Our Products</Button>
-        <NavbarToggler onClick={toggle} />
+        <Button href="/products"  className="d-md-none product-btn" >Our Products</Button>
+        <NavbarToggler className="navbar-toggler-btn" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto nav" navbar>
             <NavItem>
@@ -55,7 +55,7 @@ const Header = (props) => {
         
       </Navbar>
       <Jumbotron className="container">
-        <h1 className="display-3">ABC POWER</h1>
+        <h1 className="display-3">ABC POWER SYSTEMS</h1>
       </Jumbotron>
     </div>
   );

@@ -7,6 +7,7 @@ import Home from './HomeComponent';
 import AboutUs from './AboutUsComponent';
 import Products from './ProductsComponent';
 import Contact from './ContactComponent';
+import Footer from './FooterComponent';
 
 class Main extends Component {
 
@@ -36,6 +37,7 @@ class Main extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <Footer />
             </div>
         );
     }
