@@ -1,7 +1,7 @@
 import React from 'react';
 import { Media } from 'reactstrap';
 
-const ProductDetails = () => {
+const ProductDetails = (props) => {
     return (
         <div>
             <Media>

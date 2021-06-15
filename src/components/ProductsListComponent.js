@@ -1,46 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-const ProductsList = ({url}) => {
+const ProductsList = (props) => {
     
-    if(url === '/products'){
+
+    if(props.url === '/products'){
         return null;
     }
+
+    const products = props.prods.map((product) => {
+        return (
+            <Link to={`/products/${product.id}`} className='link'>
+                <ListGroupItem>{product.name}</ListGroupItem>
+            </Link>
+        );
+
+    });
 
     return (
         <div className='products-list'>
             <h1>Our Producs</h1>
             <ListGroup>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
-                <Link to='/products/1' className='link'>
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                </Link>
+                {products}
+                
             </ListGroup>
         </div>
     )

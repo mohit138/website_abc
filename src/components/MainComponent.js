@@ -37,6 +37,14 @@ class Main extends Component {
             this.state.mainColSize = 8;
         }
 
+        const ProductWithId = ({match}) => {
+            return(
+                <ProductDetails 
+                    product={this.state.prods.filter((product) => product.id ===parseInt (match.params.id,10))[0] }
+                />
+            );
+        }
+
         return(
             <div>
                 <Header />
@@ -49,13 +57,14 @@ class Main extends Component {
                                 <Route exact path='/aboutus' component={() => <AboutUs clients={this.state.clients} />} />
                                 <Route exact path='/products' component={() => <Products prods={this.state.prods}/>} />
                                 <Route exact path='/contact' component={Contact} />
-                                <Route exact path='/products/1' component={ProductDetails} />
+                                <Route exact path='/products/:id' component={ProductWithId} /> 
                             </Switch>
                             {/* <Route><AboutUs /></Route> */}
                         </Col>
                         <Col md='4' className='d-none d-md-block'>
-                            <ProductsList url={window.location.pathname} />
-                            
+                            {/* <ProductsList url={window.location.pathname} prods={this.state.prods} /> */}
+                            <Route  component={() => <ProductsList url={window.location.pathname} prods={this.state.prods} />} />
+                                
                         </Col>
                     </Row>
                 </Container>
