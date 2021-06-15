@@ -94,6 +94,48 @@
   transition: 0.3s ease-in-out;
 }
 
+/* products page */
+.prod-media{
+  margin: 10px 0;
+}
+
+/* contact */
+.contact-head{
+  text-align: center;
+}
+
+.contact-img{
+  width: 100%;
+}
+
+.contact-block{
+  background-color: cornflowerblue;
+  margin: 10px 0;
+  height: 150px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.content-block-div{
+  padding: 0 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 65%;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: black;
+}
+.contact-link:hover{
+  color:black;
+}
+
+.map{
+  height: 400px;
+}
 
 @media only screen and (max-width:992px){
   .nav-item {
@@ -125,5 +167,13 @@
   .navbar-toggler-btn {
     padding: 0.15rem 0.55rem !important ;
     font-size: 1rem !important;
+  }
+
+  .map{
+    height: 300px;
+  }
+
+  .footer{
+    font-size: .8rem;
   }
 }

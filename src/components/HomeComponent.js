@@ -5,7 +5,7 @@ import {
   CardTitle, CardSubtitle, Button, 
   Col, Container, Row
 } from 'reactstrap';
-import img1 from '../images/318x180.svg';
+// import img1 from '../../public/assets/images/318x180.svg';
 
 const Home = (props) => {
   return (
@@ -15,7 +15,7 @@ const Home = (props) => {
           <Col>
           <Link to='/aboutus' className='link'>
             <Card>
-              <CardImg top width="100%" src={img1} alt="Card image cap" />
+              <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
               <CardBody>
                 <CardTitle tag="h5">About Us</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
@@ -29,7 +29,7 @@ const Home = (props) => {
           <Col md='6'>
             <Link to='/products' className='link'>
               <Card>
-                <CardImg top width="100%" src={img1} alt="Card image cap" />
+                <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
                 <CardBody>
                   <CardTitle tag="h5">Our Products</CardTitle>
                   <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
@@ -41,7 +41,7 @@ const Home = (props) => {
           <Col md='6'>
             <Link to='/contact' className='link'>
               <Card>
-                <CardImg top width="100%" src={img1} alt="Card image cap" />
+                <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
                 <CardBody>
                   <CardTitle tag="h5">Contact Us</CardTitle>
                   <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>

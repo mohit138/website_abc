@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { Button } from 'reactstrap'; 
-import logo from "../images/logo.png";
+// import logo from "../../public/assets/images/logo.png";
 import {
   Collapse,
   Navbar,
@@ -28,7 +28,7 @@ const Header = (props) => {
       <Navbar color="dark" dark expand="md">
         <div  className="container" >
         <NavbarBrand className="mr-auto " href="/">
-        <img src={logo} className='nav-logo' alt="ABC Power" />
+        <img src='assets/images/logo.png' className='nav-logo' alt="ABC Power" />
             <span className='nav-head'>ABC POWER SYSTEMS</span>
         </NavbarBrand>
         <Button href="/products"  className="d-md-none product-btn" >Our Products</Button>
