@@ -11,37 +11,85 @@ import Footer from './FooterComponent';
 import { PRODS } from '../shared/products';
 import { CLIENTS } from '../shared/clients';
 import ProductDetails from './ProductDetailsComponent';
+import { fetchClients, fetchProducts } from '../redux/ActionCreators';
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+    return {
+        products: state.products,
+        clients: state.clients
+    }
+}
+
+const mapDispatchToProps = (dispatch) => ({
+    fetchProducts : () => {dispatch(fetchProducts())},
+    fetchClients : () => {dispatch(fetchClients())}
+});
 
 class Main extends Component {
 
     constructor(props) {
       super(props);
-      this.state = { 
-        prods : PRODS,
-        clients: CLIENTS,
-        mainColSize: 8
-     };
-  
+    //   this.state = { 
+    //     prods : PRODS,
+    //     clients: CLIENTS,
+    //     mainColSize: 8
+    //  };
     }
 
+    componentDidMount(){
+        this.props.fetchProducts();
+        this.props.fetchClients();
+    }
 
+    mainColSize = 8;
 
     render(){
 
         
         if(window.location.pathname === '/products')
         {
-            this.state.mainColSize = 12;
+            this.mainColSize = 12;
         }
         else {
-            this.state.mainColSize = 8;
+            this.mainColSize = 8;
         }
 
         const ProductWithId = ({match}) => {
             return(
                 <ProductDetails 
-                    product={this.state.prods.filter((product) => product.id ===parseInt (match.params.id,10))[0] }
+                    product={this.props.products.products.filter((product) => product.id ===parseInt (match.params.id,10))[0] }
+                    productLoading={this.props.products.isLoading}
+                    productErrMess={this.props.products.errMess}
                 />
+            );
+        }
+
+        const AboutUsPage = () => {
+            return(
+                <AboutUs 
+                    clients={this.props.clients.clients} 
+                    clientsLoading={this.props.clients.isLoading}
+                    clientsErrMess={this.props.clients.errMess}  
+                    />
+            );
+        }
+
+        const ProductsPage = () => {
+            return(
+                <Products products={this.props.products.products}
+                    productsLoading={this.props.products.isLoading}
+                    productsErrMess={this.props.products.errMess}
+                    />
+            );
+        }
+
+        const ProductListPart = () => {
+            return(
+                <ProductsList url={window.location.pathname} 
+                    products={this.props.products.products} 
+                    productsLoading={this.props.products.isLoading}
+                    productsErrMess={this.props.products.errMess}/>
             );
         }
 
@@ -50,12 +98,12 @@ class Main extends Component {
                 <Header />
                 <Container>
                     <Row>
-                        <Col md={this.state.mainColSize}>
+                        <Col md={this.mainColSize}>
                             
                             <Switch>
                                 <Route exact path='/' component={Home} />
-                                <Route exact path='/aboutus' component={() => <AboutUs clients={this.state.clients} />} />
-                                <Route exact path='/products' component={() => <Products prods={this.state.prods}/>} />
+                                <Route exact path='/aboutus' component={AboutUsPage} />
+                                <Route exact path='/products' component={ProductsPage} />
                                 <Route exact path='/contact' component={Contact} />
                                 <Route exact path='/products/:id' component={ProductWithId} /> 
                             </Switch>
@@ -63,7 +111,7 @@ class Main extends Component {
                         </Col>
                         <Col md='4' className='d-none d-md-block'>
                             {/* <ProductsList url={window.location.pathname} prods={this.state.prods} /> */}
-                            <Route  component={() => <ProductsList url={window.location.pathname} prods={this.state.prods} />} />
+                            <Route  component={ProductListPart} />
                                 
                         </Col>
                     </Row>
@@ -74,4 +122,4 @@ class Main extends Component {
     }
 }
 
-export default withRouter((Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));

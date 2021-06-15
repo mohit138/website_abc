@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Media} from 'reactstrap';
 import { Link } from 'react-router-dom';
-
+import { Loading } from './LoadingComponent';
 
 
 
@@ -9,7 +9,7 @@ const Products = (props) => {
     
     
 
-    const products = props.prods.map((product)=>{
+    const products = props.products.map((product)=>{
         console.log(product.image);
         return(
             <Col md='6' className='prod-media'>
@@ -30,15 +30,30 @@ const Products = (props) => {
         );
     });
 
-    return (
-        <div>
-            <Container>
-                <Row>
-                    {products}
-                </Row>
-            </Container>
-        </div>
-    )
+
+    if(props.productsLoading)
+    {
+        return(
+          <Loading />
+        );
+    }
+    else if(props.productsErrMess)
+    {
+        return(<h4>clientsErrMess</h4>);
+    }
+    else
+    {
+        return (
+            <div>
+                <Container>
+                    <Row>
+                        {products}
+                    </Row>
+                </Container>
+            </div>
+        );
+    }
+    
 }
 
 export default Products

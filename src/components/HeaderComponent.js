@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import { Button } from 'reactstrap'; 
 // import logo from "../../public/assets/images/logo.png";
 import {
@@ -27,25 +28,25 @@ const Header = (props) => {
     <div className='header'>
       <Navbar color="dark" dark expand="md">
         <div  className="container" >
-        <NavbarBrand className="mr-auto " href="/">
+        <NavbarBrand tag={Link} className="mr-auto " to="/">
         <img src='http://localhost:3000/assets/images/logo.png' className='nav-logo' alt="ABC Power" />
             <span className='nav-head'>ABC POWER SYSTEMS</span>
         </NavbarBrand>
-        <Button href="/products"  className="d-md-none product-btn" >Our Products</Button>
+        <Button tag={Link} to="/products"  className="d-md-none product-btn" >Our Products</Button>
         <NavbarToggler className="navbar-toggler-btn" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto nav" navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink tag={Link} to="/" activeClassName="is-active">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/aboutus">About</NavLink>
+              <NavLink tag={Link} to="/aboutus" activeClassName="is-active">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/products">Our Products</NavLink>
+              <NavLink tag={Link} to="/products" activeClassName="is-active">Our Products</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact">Contact Us</NavLink>
+              <NavLink tag={Link} to="/contact" activeClassName="is-active">Contact Us</NavLink>
             </NavItem>
           </Nav>
                     
