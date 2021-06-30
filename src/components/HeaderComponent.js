@@ -18,35 +18,52 @@ import {
   Jumbotron,
   Button
 } from 'reactstrap';
+import { useLocation } from "react-router-dom";
+import { baseUrl } from '../shared/baseUrl';
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    console.log(width);
+    if(width <= 767)
+      setIsOpen(!isOpen);
+  }
+
+  // const toggle =() =>setIsOpen(!isOpen);
+
+  const location = useLocation();
+
+    //destructuring pathname from location
+    const { pathname } = location;
+
+    //Javascript split method to get the name of the path in array
+    const splitLocation = pathname.split("/");
 
   return (
     <div className='header'>
-      <Navbar color="dark" dark expand="md">
+      <Navbar color="dark" dark expand="md" fixed="top">
         <div  className="container" >
-        <NavbarBrand tag={Link} className="mr-auto " to="/">
-        <img src='http://localhost:3000/assets/images/logo.png' className='nav-logo' alt="ABC Power" />
+        <NavbarBrand tag={Link} className="mr-auto nav-brand" to={process.env.PUBLIC_URL+"/"}>
+        <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" />
             <span className='nav-head'>ABC POWER SYSTEMS</span>
         </NavbarBrand>
-        <Button tag={Link} to="/products"  className="d-md-none product-btn" >Our Products</Button>
+        <Button tag={Link} to={process.env.PUBLIC_URL+"/products"}  className="d-md-none product-btn" >Our Products</Button>
         <NavbarToggler className="navbar-toggler-btn" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto nav" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/" activeClassName="is-active">Home</NavLink>
+              <NavLink tag={Link}  onClick={toggle} to={process.env.PUBLIC_URL+"/"} className={splitLocation[1] === "" ? "active" : ""} >Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/aboutus" activeClassName="is-active">About</NavLink>
+              <NavLink tag={Link}  onClick={toggle} to={process.env.PUBLIC_URL+"/aboutus"} className={splitLocation[1] === "aboutus" ? "active" : ""} >About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/products" activeClassName="is-active">Our Products</NavLink>
+              <NavLink tag={Link}  onClick={toggle} to={process.env.PUBLIC_URL+"/products"} className={splitLocation[1] === "products" ? "active" : ""} >Our Products</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/contact" activeClassName="is-active">Contact Us</NavLink>
+              <NavLink tag={Link}  onClick={toggle} to={process.env.PUBLIC_URL+"/contact"} className={splitLocation[1] === "contact" ? "active" : ""} >Contact Us</NavLink>
             </NavItem>
           </Nav>
                     
@@ -55,8 +72,8 @@ const Header = (props) => {
         </div>
         
       </Navbar>
-      <Jumbotron className="container">
-        <h1 className="display-3">ABC POWER SYSTEMS</h1>
+      <Jumbotron className="jumbo-container container">
+        <h1 className="display-4">ABC POWER SYSTEMS</h1>
       </Jumbotron>
     </div>
   );

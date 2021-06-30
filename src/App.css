@@ -40,7 +40,17 @@
   padding-left: 15px;
 }
 
+.nav{
+  text-align: center;
+}
 
+.active{
+  color: rgb(199, 199, 199);
+}
+
+.jumbo-container{
+  padding-top: 70px;
+}
 
  /* products list styling */
 .products-list{
@@ -141,6 +151,13 @@
 .loader{
   text-align: center;
 }
+
+/* feedback form  */
+
+.form-group{
+  margin: 5px 0;
+}
+
 @media only screen and (max-width:992px){
   .nav-item {
     padding: 0 10px;
@@ -161,7 +178,7 @@
 
   .nav-logo{
     height:40px;
-    width: 27;
+    width: 27px;
   }
 
   .nav-head{
@@ -173,6 +190,10 @@
     font-size: 1rem !important;
   }
 
+  .jumbo-container{
+    padding-top: 65px;
+  }
+
   .map{
     height: 300px;
   }
@@ -180,4 +201,11 @@
   .footer{
     font-size: .8rem;
   }
+}
+
+@media only screen and (max-width:410px){
+  .nav-head{
+    display: none;
+  }
+
 }

@@ -1,6 +1,7 @@
 import * as ActionTypes from './ActionTypes';
 import {baseUrl} from '../shared/baseUrl';
 
+
 // for products
 
 export const productsLoading = () =>({
@@ -20,7 +21,7 @@ export const productsFailed = (errmess) =>({
 export const fetchProducts = () => (dispatch) =>{
     dispatch(productsLoading(true));
 
-    return fetch(baseUrl+'products')
+    return fetch(baseUrl+'products.json')
         .then(response => {
             if(response.ok){
                 return response;
@@ -58,7 +59,7 @@ export const clientsFailed = (errmess) =>({
 export const fetchClients = () => (dispatch) =>{
     dispatch(clientsLoading(true));
 
-    return fetch(baseUrl+'clients')
+    return fetch(baseUrl+'clients.json')
         .then(response => {
             if(response.ok){
                 return response;

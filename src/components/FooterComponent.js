@@ -9,16 +9,16 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md='4'>
-                        <Link to='/' className='link-footer'><h5>ABC Power Systems</h5></Link>
+                        <Link to={process.env.PUBLIC_URL+'/'} className='link-footer'><h5>ABC Power Systems</h5></Link>
                         <p>We are Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                     </Col>
                     <Col md='4' xs='6'>
                         <List type='unstyled'>
-                            <li><Link to='/' className='link-footer'>Home</Link></li>
-                            <li><Link to='/aboutus' className='link-footer'>About Us</Link></li>
-                            <li><Link to='/products' className='link-footer'>Products</Link></li>
-                            <li><Link to='/contact' className='link-footer'>Contact Us</Link></li>
+                            <li><Link to={process.env.PUBLIC_URL+'/'} className='link-footer'>Home</Link></li>
+                            <li><Link to={process.env.PUBLIC_URL+'/aboutus'} className='link-footer'>About Us</Link></li>
+                            <li><Link to={process.env.PUBLIC_URL+'/products'} className='link-footer'>Products</Link></li>
+                            <li><Link to={process.env.PUBLIC_URL+'/contact'} className='link-footer'>Contact Us</Link></li>
                         </List>
                     </Col>
                     <Col md='4' xs='6'>

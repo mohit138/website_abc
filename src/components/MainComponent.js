@@ -13,6 +13,7 @@ import { CLIENTS } from '../shared/clients';
 import ProductDetails from './ProductDetailsComponent';
 import { fetchClients, fetchProducts } from '../redux/ActionCreators';
 import { connect } from 'react-redux';
+import { actions } from 'react-redux-form';
 
 const mapStateToProps = state => {
     return {
@@ -23,7 +24,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch) => ({
     fetchProducts : () => {dispatch(fetchProducts())},
-    fetchClients : () => {dispatch(fetchClients())}
+    fetchClients : () => {dispatch(fetchClients())},
+    resetFeedbackForm: () => {dispatch(actions.reset('user'))},
+  
 });
 
 class Main extends Component {
@@ -85,6 +88,7 @@ class Main extends Component {
         }
 
         const ProductListPart = () => {
+            console.log(this.props.products);
             return(
                 <ProductsList url={window.location.pathname} 
                     products={this.props.products.products} 
@@ -104,7 +108,7 @@ class Main extends Component {
                                 <Route exact path='/' component={Home} />
                                 <Route exact path='/aboutus' component={AboutUsPage} />
                                 <Route exact path='/products' component={ProductsPage} />
-                                <Route exact path='/contact' component={Contact} />
+                                <Route exact path='/contact' component={()=> <Contact resetFeedbackForm={this.props.resetFeedbackForm}/> } />
                                 <Route exact path='/products/:id' component={ProductWithId} /> 
                             </Switch>
                             {/* <Route><AboutUs /></Route> */}

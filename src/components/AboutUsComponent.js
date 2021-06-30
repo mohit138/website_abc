@@ -51,7 +51,7 @@ const AboutUs = (props) => {
     }
     else if(props.clientsErrMess)
     {
-        return(<h4>clientsErrMess</h4>);
+        return(<h4>{props.clientsErrMess}</h4>);
     }
     else
     {

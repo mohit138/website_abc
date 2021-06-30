@@ -1,0 +1,50 @@
+[
+    {
+        "id":0,
+        "name":"icici",
+        "image":"assets/images/icici-lombard.svg",
+        "width": true
+    },
+    {
+        "id":1,
+        "name":"ambica",
+        "image":"assets/images/ambica-logo.png",
+        "width": true
+    },
+    {
+        "id":2,
+        "name":"gmdc",
+        "image":"assets/images/gmdc-logo.jpg",
+        "width": false
+    },
+    {
+        "id":3,
+        "name":"civil",
+        "image":"assets/images/civil-hsptl.png",
+        "width": false
+    },
+    {
+        "id":4,
+        "name":"iima",
+        "image":"assets/images/iima-logo.png",
+        "width": false
+    },
+    {
+        "id":5,
+        "name":"nirma",
+        "image":"assets/images/Nirma-Uni-Logo.jpg",
+        "width": true
+    },
+    {
+        "id":6,
+        "name":"sintex",
+        "image":"assets/images/sintex-plastic.png",
+        "width": true
+    },
+    {
+        "id":7,
+        "name":"cushah",
+        "image":"assets/images/cu-shah.jpg",
+        "width": false
+    }
+]

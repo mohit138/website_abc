@@ -39,7 +39,7 @@ const Products = (props) => {
     }
     else if(props.productsErrMess)
     {
-        return(<h4>clientsErrMess</h4>);
+        return(<h4>{props.productsErrMess}</h4>);
     }
     else
     {
