@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Header from './HeaderComponent';
 import ProductsList from './ProductsListComponent';
@@ -15,6 +15,8 @@ import { fetchClients, fetchProducts } from '../redux/ActionCreators';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
 import { baseUrl } from '../shared/baseUrl';
+import  Navbar  from './NavbarComponent/index';
+import Sidebar from './SidebarComponent/index';
 
 const mapStateToProps = state => {
     return {
@@ -34,17 +36,39 @@ class Main extends Component {
 
     constructor(props) {
       super(props);
-    //   this.state = { 
-    //     prods : PRODS,
-    //     clients: CLIENTS,
-    //     mainColSize: 8
-    //  };
+      this.state = { 
+        // prods : PRODS,
+        // clients: CLIENTS,
+        // mainColSize: 8
+        open: 0,
+        width: window.innerWidth
+     };
+     this.setOpen= this.setOpen.bind(this);
+    }
+
+    handleResize = () => {
+        this.setState({width:window.innerWidth});
+        if(this.state.width >= 992){
+            this.setState({open:false});
+        }
+
+    }
+
+    setOpen(opn){
+        this.setState({open : !opn})
     }
 
     componentDidMount(){
         this.props.fetchProducts();
         this.props.fetchClients();
+        window.addEventListener("resize",this.handleResize);
     }
+
+    componentWillUnmount() {
+        window.addEventListener("resize", this.handleResize);
+    } 
+
+
 
     mainColSize = 8;
 
@@ -98,12 +122,18 @@ class Main extends Component {
             );
         }
 
+
+        
         return(
             <div className="bg-color-2">
-                <Header />
+                <Sidebar open={this.state.open} setOpen={this.setOpen}/>
+                <Navbar open={this.state.open} setOpen={this.setOpen} />
+                
+                {/* <Header /> */}
+
                 <Container>
                     <Row>
-                        <Col md={this.mainColSize}>
+                        <Col lg={this.mainColSize}>
                             
                             <Switch>
                                 <Route exact path={process.env.PUBLIC_URL+'/'} component={Home} />
@@ -114,7 +144,7 @@ class Main extends Component {
                             </Switch>
                             {/* <Route><AboutUs /></Route> */}
                         </Col>
-                        <Col md='4' className='d-none d-md-block'>
+                        <Col lg='4' className='d-none d-lg-block'>
                             {/* <ProductsList url={window.location.pathname} prods={this.state.prods} /> */}
                             <Route  component={ProductListPart} />
                                 

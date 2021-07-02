@@ -51,8 +51,9 @@
   display: flex;
   justify-content: center;
   padding-right: 10px;
-  transition: 2s ease-in-out;
 }
+
+
 
 .nav-item {
   padding: 0 15px;
@@ -201,6 +202,7 @@
     padding: 0 10px;
   }
 
+
   .about-img{
     display:block;
     float:none;
@@ -209,9 +211,7 @@
 }
 
 @media only screen and (max-width:768){
-  .navbar-collapse{
-    
-  }
+
 }
 
 @media only screen and (max-width:576px){
