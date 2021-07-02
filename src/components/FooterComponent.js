@@ -26,7 +26,7 @@ const Footer = () => {
                         <br/>
                         <a className='link-footer' href="tel:+91-9825029182"> <FaMobile/> +91 9825029182</a>
                         <br/>
-                        <a className='link-footer' href="sarthi_abc@yahoo.com"><FaEnvelope /> sarthi_abc@yahoo.com</a> 
+                        <a className='link-footer' href="mailto: sarthi_abc@yahoo.com"><FaEnvelope /> sarthi_abc@yahoo.com</a> 
                     </Col>
                     
                     <Col>© Copyright 2021. ABC Power Systems. All Rights Reserved.</Col>

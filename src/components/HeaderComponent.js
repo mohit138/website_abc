@@ -31,8 +31,6 @@ const Header = (props) => {
       setIsOpen(!isOpen);
   }
 
-  // const toggle =() =>setIsOpen(!isOpen);
-
   const location = useLocation();
 
     //destructuring pathname from location

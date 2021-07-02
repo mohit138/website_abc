@@ -32,7 +32,7 @@ const Home = (props) => {
       <Container>
         <Row>
           <Col>
-          <Link to='/aboutus' className='link'>
+          <Link to={process.env.PUBLIC_URL+'/aboutus'} className='link'>
             <Card>
               {/* <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" /> */}
               <Carousel
@@ -70,7 +70,7 @@ const Home = (props) => {
         </Row>
         <Row>
           <Col md='6'>
-            <Link to='/products' className='link'>
+            <Link to={process.env.PUBLIC_URL+'/products'} className='link'>
               <Card>
                 <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
                 <CardBody>
@@ -82,7 +82,7 @@ const Home = (props) => {
             </Link>
           </Col>
           <Col md='6'>
-            <Link to='/contact' className='link'>
+            <Link to={process.env.PUBLIC_URL+'/contact'} className='link'>
               <Card>
                 <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
                 <CardBody>

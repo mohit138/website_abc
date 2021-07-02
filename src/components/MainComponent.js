@@ -14,6 +14,7 @@ import ProductDetails from './ProductDetailsComponent';
 import { fetchClients, fetchProducts } from '../redux/ActionCreators';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
+import { baseUrl } from '../shared/baseUrl';
 
 const mapStateToProps = state => {
     return {
@@ -50,7 +51,7 @@ class Main extends Component {
     render(){
 
         
-        if(window.location.pathname === '/products')
+        if(window.location.pathname === process.env.PUBLIC_URL+'/products')
         {
             this.mainColSize = 12;
         }
@@ -98,18 +99,18 @@ class Main extends Component {
         }
 
         return(
-            <div>
+            <div className="bg-color-2">
                 <Header />
                 <Container>
                     <Row>
                         <Col md={this.mainColSize}>
                             
                             <Switch>
-                                <Route exact path='/' component={Home} />
-                                <Route exact path='/aboutus' component={AboutUsPage} />
-                                <Route exact path='/products' component={ProductsPage} />
-                                <Route exact path='/contact' component={()=> <Contact resetFeedbackForm={this.props.resetFeedbackForm}/> } />
-                                <Route exact path='/products/:id' component={ProductWithId} /> 
+                                <Route exact path={process.env.PUBLIC_URL+'/'} component={Home} />
+                                <Route exact path={process.env.PUBLIC_URL+'/aboutus'} component={AboutUsPage} />
+                                <Route exact path={process.env.PUBLIC_URL+'/products'} component={ProductsPage} />
+                                <Route exact path={process.env.PUBLIC_URL+ '/contact'} component={()=> <Contact resetFeedbackForm={this.props.resetFeedbackForm}/> } />
+                                <Route exact path={process.env.PUBLIC_URL+'/products/:id'} component={ProductWithId} /> 
                             </Switch>
                             {/* <Route><AboutUs /></Route> */}
                         </Col>

@@ -1,75 +1,351 @@
 [
     {
         "id":0,
-        "name":"prod name",
+        "name":"True Online",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "In comparison to an SCR based UPS, Its phenomenal saving is more than 4KWH per hour, which is 40 Units a day for 10 hours of work that delivers a saving of 12000 units per year. You save a whooping Rs 60,000 per year. This makes the “ Sarthi “ UPS almost 'Free' in just a year, while itscontinues to more savings for the years to come.",
+        "features": ["LCD Display","Active Power Factor Correction","Customization Available","User Configurable","All in One Single Card with DSP controller","Communication (Optional)","Inbuilt isolation Transformer(Above 3KVA)","Single Card Including Inverter, Charger & Power Device"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["1kVA","2/3kVA","3kVA","5kVA","6kVA","7.5kVA","10kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["36 V DC","96 V DC","120 V DC","180 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":1,
-        "name":"prod name",
+        "name":"3 Phase Lift UPS",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":2,
-        "name":"prod name",
+        "name":"On Line UPS",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":3,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":4,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":5,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":6,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":7,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":8,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":9,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":10,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     },
     {
         "id":11,
         "name":"prod name",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum "
+        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "specifications": [
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+            },
+            {
+                "spec_name":"Frequency",
+                "spec_detail":["50/60±5%"]
+            },
+            {
+                "spec_name":"Input Power Factor",
+                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+            },
+            {
+                "spec_name":"Power Rating",
+                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+            }
+        ]
     }
     
 ]

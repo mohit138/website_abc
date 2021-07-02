@@ -6,13 +6,13 @@ import { Loading } from './LoadingComponent';
 const ProductsList = (props) => {
     
 
-    if(props.url === '/products'){
+    if(props.url === process.env.PUBLIC_URL+'/products'){
         return null;
     }
 
     const products = props.products.map((product) => {
         return (
-            <Link to={`/products/${product.id}`} className='link'>
+            <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className='link product-list-item'>
                 <ListGroupItem>{product.name}</ListGroupItem>
             </Link>
         );
@@ -35,7 +35,7 @@ const ProductsList = (props) => {
         return (
             <div className='products-list'>
                 <h1>Our Producs</h1>
-                <ListGroup>
+                <ListGroup className="product-list-group">
                     {products}
                     
                 </ListGroup>

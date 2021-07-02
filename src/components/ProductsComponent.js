@@ -13,19 +13,22 @@ const Products = (props) => {
         console.log(product.image);
         return(
             <Col md='6' className='prod-media'>
-            <Link to={`products/${product.id}`} className='link'>
-            <Media >
-                <Media left >
-                    <Media object src='media_img.svg' alt={product.name} />
-                </Media>
-                <Media body>
-                    <Media heading>
-                    {product.name}
+                <div  className="bg-color-3 prod-media-tile">
+                <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className='link '>
+                <Media>
+                    <Media left >
+                        <Media object src='media_img.svg' alt={product.name} />
                     </Media>
-                    {product.description}
+                    <Media body>
+                        <Media heading>
+                        {product.name}
+                        </Media>
+                        {product.description}
+                    </Media>
                 </Media>
-            </Media>
-            </Link>
+                </Link>
+                </div>
+                
             </Col>
         );
     });
