@@ -1,8 +1,13 @@
 import React from 'react';
-import { Media, Row, Col, Button } from 'reactstrap';
+import { Media, Row, Col, Button  } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
 import { Table } from 'reactstrap';
+import { Carousel } from 'react-multi-carousel';
+
+
+
+
 
 const ProductDetails = (props) => {
 
@@ -76,7 +81,7 @@ const ProductDetails = (props) => {
         
 
         const FeaturesBlock = () => {
-            console.log(props.product.features);
+            // console.log(props.product.features);
 
             if(props.product.features===null)
             {    return(
@@ -103,11 +108,14 @@ const ProductDetails = (props) => {
             }
         }
 
+        
+
         return (
             <div>
                 <Media>
-                    <Media left href="#">
-                        <Media object src={baseUrl + props.product.image} width='100%' alt="e" />
+                    <Media className="product-detail-img-wrapper">
+                        
+                        <Media className="product-detail-image" object src={baseUrl + props.product.image} alt="e" />
                     </Media>
                     <Media body>
                         <Media heading>
@@ -119,9 +127,11 @@ const ProductDetails = (props) => {
                         {specifications} 
                         <Row >
                             <Col xs={{size:9, offset:3}}>
+                            <a href={baseUrl + "assets/Catalogue.pdf"} download>
                                 <Button color="primary">
                                     Click for Detailed Specifications
                                 </Button>
+                            </a>
                             </Col>
                         </Row>
                     </Media>

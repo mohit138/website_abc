@@ -1,9 +1,9 @@
 [
     {
         "id":0,
-        "name":"True Online",
-        "image": "assets/images/318x180.svg",
-        "description": "In comparison to an SCR based UPS, Its phenomenal saving is more than 4KWH per hour, which is 40 Units a day for 10 hours of work that delivers a saving of 12000 units per year. You save a whooping Rs 60,000 per year. This makes the “ Sarthi “ UPS almost 'Free' in just a year, while itscontinues to more savings for the years to come.",
+        "name":"True Online UPS",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
+        "description": "1 Phase in - 1 Phase out (Half Electricity Consuming) | Available in 1-10KVA",
         "features": ["LCD Display","Active Power Factor Correction","Customization Available","User Configurable","All in One Single Card with DSP controller","Communication (Optional)","Inbuilt isolation Transformer(Above 3KVA)","Single Card Including Inverter, Charger & Power Device"],
         "specifications": [
             {
@@ -16,14 +16,14 @@
             },
             {
                 "spec_name":"Frequency",
-                "spec_detail":["50±5%"]
+                "spec_detail":["50±5% Hz"]
             },
             {
                 "spec_name":"Input Power Factor",
                 "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
             },
             {
-                "spec_name":"Power Rating",
+                "spec_name":"Load Current",
                 "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
             }
         ]
@@ -32,7 +32,7 @@
         "id":1,
         "name":"3 Phase Lift UPS",
         "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
+        "description": "Available in 6-20 KVA",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
             {
@@ -45,51 +45,51 @@
             },
             {
                 "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_detail":["50/60±5% Hz"]
             },
             {
                 "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_detail":[">0.9 Lag"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Max o/p Current per phase",
+                "spec_detail":["7.5 A","9.5 A","12.5 A","18.5 A","24.5 A"]
             }
         ]
     },
     {
         "id":2,
         "name":"On Line UPS",
-        "image": "assets/images/318x180.svg",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "image": "assets/images/products/on line ups-sarthi.png",
+        "description": "Isolation Based 3 Phase in - 1 Phase out | 7.5-25KVA",
+        "features": ["DPS based design Pure Sine Wave","Ethernet based monitoring (Optional)","Robust Design - 20 years Product Life","High Efficiency & high Reliability","User Friendly Display","Available from 7.5KVA to 25 KVA","High Surge Capability (upto 300%) for starting Heavy Load","Tested as per ICE 61683 & ICE 60068-2 (1,2,14,30) standards","AC & DC parameter Configurable from LCD"],
         "specifications": [
             {
                 "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_detail":["5kVA","6kVA","7.5kVA","10kVA","15kVA","20kVA"]
             },
             {
                 "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_detail":["240V", "360V"]
             },
             {
                 "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_detail":["50 ± 10% Hz"]
             },
             {
                 "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_detail":[">0.92"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Output VOltage",
+                "spec_detail":["220V","230V","240V ±1% (Selectable from LCD)"]
             }
         ]
     },
     {
         "id":3,
-        "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "name":"Servo Voltage Stabaliser (1Ø-3Ø)",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -118,7 +118,7 @@
     {
         "id":4,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -147,7 +147,7 @@
     {
         "id":5,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -176,7 +176,7 @@
     {
         "id":6,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -205,7 +205,7 @@
     {
         "id":7,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -234,7 +234,7 @@
     {
         "id":8,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -263,7 +263,7 @@
     {
         "id":9,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -292,7 +292,7 @@
     {
         "id":10,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -321,7 +321,7 @@
     {
         "id":11,
         "name":"prod name",
-        "image": "assets/images/318x180.svg",
+        "image": "assets/images/products/true on line 1 ph-1ph out.png",
         "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [

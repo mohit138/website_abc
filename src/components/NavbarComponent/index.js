@@ -35,7 +35,7 @@ const Navbar = ({ open, setOpen}) => {
         
                <Nav>
                     <NavbarContainer>
-                        <NavLogo to={process.env.PUBLIC_URL+"/"}>
+                        <NavLogo  to={process.env.PUBLIC_URL+"/"}>
                         <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" />
                         <span className='nav-head'>ABC POWER SYSTEMS</span>
                         

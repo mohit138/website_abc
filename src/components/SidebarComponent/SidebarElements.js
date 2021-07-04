@@ -34,6 +34,9 @@ export const SidebarMenu = styled.ul`
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6,60px);
     }
+    @media screen and (max-height: 430px){
+        grid-template-rows: repeat(6,57px);
+    }
 `;
 
 export const SidebarLink = styled(Link)`
@@ -57,4 +60,7 @@ export const SidebarLink = styled(Link)`
         color:#777;
         transition: .3s ease-in-out;
     }
+
+    
+
 `;

@@ -147,6 +147,19 @@
   height: 100%;
 }
 
+/* product details page  */
+.product-detail-image{
+  max-width:100%;
+  max-height: 500px; 
+}
+
+.product-detail-img-wrapper{
+  text-align: center;
+  align-content: center;
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
 
 /* contact */
 .contact-head{
