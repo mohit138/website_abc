@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Loading } from './LoadingComponent';
 import { useLocation } from "react-router-dom";
+import { FadeInRightDiv } from './AnimationsComponent';
 
 const ProductsList = (props) => {
     const location = useLocation();
@@ -21,10 +22,12 @@ const ProductsList = (props) => {
     const products = props.products.map((product) => {
         // console.log(parseInt(splitLocation[2]),product.id);
         return (
+            
             <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className={parseInt(splitLocation[2]) === product.id ? "active product-list-item" : " product-list-item"} >
                 {/* <ListGroupItem>{product.name}</ListGroupItem> */}
                 <div>{product.name}</div>
             </Link>
+
         );
 
     });
@@ -43,6 +46,7 @@ const ProductsList = (props) => {
     else
     {
         return (
+            <FadeInRightDiv time="1.5s">
             <div className='products-list'>
                 <h2>Our Producs</h2>
                 <ListGroup className="product-list-group">
@@ -50,6 +54,7 @@ const ProductsList = (props) => {
                     
                 </ListGroup>
             </div>
+            </FadeInRightDiv>
         )
     }
     
