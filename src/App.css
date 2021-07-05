@@ -87,14 +87,46 @@
 
 .product-list-item{
   border-width: 2px;
-  border-radius: .4rem;
+  /* border-radius: .4rem; */
   border-color: black;
+  margin: 10px 30px;
+  text-decoration: none;
+  color:black;
+  position: relative
+}
+.product-list-item:hover {
+  color:black;
 }
 
-.list-group-item:hover {
-  color: grey;
-  transition: 0.3s ease-in-out;
+.product-list-item:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 25%;
+  background-color: rgb(3, 3, 3);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
 }
+
+.product-list-item:hover:before {
+  visibility: visible;
+  color: black;
+  transform: scaleX(1);
+}
+
+.product-list-item.active:before {
+  visibility: visible;
+  color: black;
+  transform: scaleX(1);
+}
+
+
+
+
+
 
 
 /* About styling */

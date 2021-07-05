@@ -2,18 +2,28 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Loading } from './LoadingComponent';
+import { useLocation } from "react-router-dom";
 
 const ProductsList = (props) => {
-    
+    const location = useLocation();
+
+    //destructuring pathname from location
+    const { pathname } = location;
+
+    //Javascript split method to get the name of the path in array
+    const splitLocation = pathname.split("/");
+
 
     if(props.url === process.env.PUBLIC_URL+'/products'){
         return null;
     }
 
     const products = props.products.map((product) => {
+        // console.log(parseInt(splitLocation[2]),product.id);
         return (
-            <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className='link product-list-item'>
-                <ListGroupItem>{product.name}</ListGroupItem>
+            <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className={parseInt(splitLocation[2]) === product.id ? "active product-list-item" : " product-list-item"} >
+                {/* <ListGroupItem>{product.name}</ListGroupItem> */}
+                <div>{product.name}</div>
             </Link>
         );
 
@@ -34,7 +44,7 @@ const ProductsList = (props) => {
     {
         return (
             <div className='products-list'>
-                <h1>Our Producs</h1>
+                <h2>Our Producs</h2>
                 <ListGroup className="product-list-group">
                     {products}
                     

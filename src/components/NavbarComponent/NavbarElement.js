@@ -148,6 +148,7 @@ export const NavLinks = styled(Link)`
   &.active {
       border-bottom: 5px solid lightblue;
       transition: all 0.2s ease-in-out;
+      color:#ccc;
   }
   &:hover{
     color:white;
