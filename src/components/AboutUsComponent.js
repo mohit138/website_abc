@@ -10,7 +10,7 @@ import { Loading } from './LoadingComponent';
 // import nirma_logo from '../../public/assets/images/Nirma-Uni-Logo.jpg';
 // import sintex_logo from '../../public/assets/images/sintex-plastic.png';
 // import cushah_logo from '../../public/assets/images/cu-shah.jpg';
-
+import { FadeInDiv } from './AnimationsComponent';
 
 const responsive = {
     desktop: {
@@ -56,17 +56,19 @@ const AboutUs = (props) => {
     else
     {
       return (
-          <div>
-              <h1>About Us</h1>
+          <FadeInDiv time="2s">
+              <h1 className="about-heading">About Us</h1>
               <div className="about">
-              <img src='assets/images/318x180.svg' className="about-img" height="200" width="340" alt="ABC Power" />
+              <div className="about-img" >
+                <img src='assets/images/318x180.svg' alt="ABC Power" />
+              </div>
               <p className="about-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare dui quis urna volutpat, eget sodales odio tempor. Praesent luctus fringilla mauris, id porttitor mi tincidunt nec. Duis ac lacus id nisi egestas vehicula nec in enim. Nulla nisl quam, viverra non egestas a, vulputate a ante. Nullam aliquet orci vitae imperdiet facilisis. Pellentesque semper porttitor porttitor. Vestibulum cursus neque nec consectetur malesuada. Duis et egestas risus. Vestibulum sodales risus at tincidunt ornare. Integer nunc justo, ultricies sagittis suscipit dignissim, posuere at ante. Integer consectetur odio urna, et varius libero faucibus quis.
                   Vivamus ut odio lobortis, rhoncus magna ut, ullamcorper turpis. Aliquam fermentum, tortor sed faucibus gravida, urna enim porta nisl, sed ornare orci urna non velit. Nunc accumsan porttitor sollicitudin. Sed quis accumsan nisi. Suspendisse iaculis purus sed ligula mattis, vel dictum massa varius. Vestibulum accumsan viverra massa, sed lobortis sem tincidunt sed. Sed purus tortor, sagittis id imperdiet in, sollicitudin eu mi. Etiam augue sem, feugiat id ante in, lobortis tristique tortor. Ut egestas posuere mollis. Cras neque turpis, volutpat et lorem et, lacinia condimentum tortor. Cras nec auctor eros. Curabitur ut diam libero. Donec tellus leo, accumsan nec tortor in, ultricies finibus quam.
               </p>
               </div>
 
-              <h3>Our Clients</h3>
+              <h3 className="about-heading">Our Clients</h3>
               <Carousel
                   swipeable={false}
                   draggable={false}
@@ -91,7 +93,7 @@ const AboutUs = (props) => {
                   
                   </Carousel>
 
-          </div>
+          </FadeInDiv>
       )
     }
 }

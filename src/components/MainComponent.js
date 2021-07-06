@@ -41,18 +41,20 @@ class Main extends Component {
         // clients: CLIENTS,
         // mainColSize: 8
         open: 0,
-        width: window.innerWidth
+        // to make rerender on every screen size change, but seemed to increase further design complexity, hence commented
+        // width: window.innerWidth
      };
      this.setOpen= this.setOpen.bind(this);
     }
 
-    handleResize = () => {
-        this.setState({width:window.innerWidth});
-        if(this.state.width >= 992){
-            this.setState({open:false});
-        }
+    // also for re-rendering on screen size change
+    // handleResize = () => {
+    //     this.setState({width:window.innerWidth});
+    //     if(this.state.width >= 992){
+    //         this.setState({open:false});
+    //     }
 
-    }
+    // }
 
     setOpen(opn){
         this.setState({open : !opn})
@@ -61,14 +63,14 @@ class Main extends Component {
     componentDidMount(){
         this.props.fetchProducts();
         this.props.fetchClients();
-        window.addEventListener("resize",this.handleResize);
+        // window.addEventListener("resize",this.handleResize);
     }
 
     componentWillUnmount() {
-        window.addEventListener("resize", this.handleResize);
+        // window.addEventListener("resize", this.handleResize);
     } 
 
-
+    
 
     mainColSize = 8;
 
@@ -146,7 +148,7 @@ class Main extends Component {
                         </Col>
                         <Col lg='4' className='d-none d-lg-block'>
                             {/* <ProductsList url={window.location.pathname} prods={this.state.prods} /> */}
-                            <Route  component={ProductListPart} />
+                            <Route component={ProductListPart} />
                                 
                         </Col>
                     </Row>

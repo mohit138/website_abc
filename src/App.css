@@ -190,18 +190,24 @@ margin-top: 20px;
 
 /* About styling */
 
-.about-img{
-  float:left;
+.about-heading{
+  text-align: center;
+}
+
+.about-img img{
+  width: 100%;
   margin: 10px 10px 10px 0;
+  overflow: hidden;
 }
 
 .about-content{
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: justify;
+  padding-bottom: 30px;
 }
 
 .carousel{
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 

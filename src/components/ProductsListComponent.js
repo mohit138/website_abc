@@ -46,6 +46,7 @@ const ProductsList = (props) => {
     else
     {
         return (
+            <div>
             <FadeInRightDiv time="1.5s">
             <div className='products-list'>
                 <h2>Our Producs</h2>
@@ -55,6 +56,7 @@ const ProductsList = (props) => {
                 </ListGroup>
             </div>
             </FadeInRightDiv>
+            </div>
         )
     }
     

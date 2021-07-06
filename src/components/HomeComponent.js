@@ -114,8 +114,8 @@ const Home = (props) => {
           <hr/>
           </Col>
         </Row>
-        <Row>
-          <Col data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" md='6'>
+        <Row style={{"overflow-x":"hidden"}}>
+          <Col data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" md='6' data-aos-offset="160">
             {/* <Link to={process.env.PUBLIC_URL+'/products'} className='link'> */}
               <div className="image image-colorize"><img src='assets/images/318x180.svg' width='100%'/></div>
                 <h5 className="home-card-heading">Products</h5>
@@ -135,7 +135,7 @@ const Home = (props) => {
               </Card> */}
             {/* </Link> */}
           </Col>
-          <Col data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" md='6'>
+          <Col data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" md='6' data-aos-offset="160">
             <div className="image image-colorize"><img src='assets/images/318x180.svg' width='100%'/></div>
               <h5 className="home-card-heading">Contact US</h5>
             <div className="home-card-content">
