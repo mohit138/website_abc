@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Carousel from "react-multi-carousel";
+import { Parallax, Background } from 'react-parallax';
 import { Link } from 'react-router-dom';
 import {
   Card, CardImg, CardText, CardBody,
@@ -10,7 +11,6 @@ import {
 import { FadeInLeftDiv, FadeInRightDiv } from './AnimationsComponent';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
 
 const responsive = {
   desktop: {
@@ -34,14 +34,55 @@ const Home = (props) => {
   useEffect(()=>{
     Aos.init({duration: 2000});
   },[])
+
+
+  const products = props.products.map((product)=>{
+    console.log(product.image);
+    return(
+        <div className='home-product'>
+          <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className='home-product-link'>
+          <div className='home-product-image'>
+            <img width='100%' src={product.image[0]}></img>
+          </div>
+          <div className='home-product-content'>
+            <div className='home-product-heading'>{product.name}</div>
+            <div className='home-product-description'>{product.description}</div>
+            <div className="home-product-more">
+              <Link to={process.env.PUBLIC_URL+'/products'}  className='home-card-link'>View More Products</Link>
+            </div>
+          </div>
+          </Link>
+        </div>
+    );
+});
+
   return (
     <div>
-      <Container>
-        <Row>
-          <Col>
-          {/* <Link to={process.env.PUBLIC_URL+'/aboutus'} className='link'> */}
-            {/* <Card>
-              <Carousel
+      
+      <Parallax strength={600}>
+      <Background className="custom-bg">
+            <img src='assets/images/stock/hero.jpg' alt="hero-img" />
+      </Background>
+      <div className='hero-container'>
+      <div className='hero-heading'>
+          <div>We Are Here To Facilitate Uninterrupted Productivity</div>
+      </div>
+      </div>
+        </Parallax>
+        
+      {/* <div className='hero-container'>
+        
+        <div className='hero-image'>
+          <img width='100%' src='assets/images/stock/hero.jpg'></img>
+        </div>
+
+        <div className='hero-heading'>
+          <div>We Are Here To Facilitate Uninterrup Productivity</div>
+        </div>
+      </div> */}
+
+      <div className='home-product-container'>
+        <Carousel
                   swipeable={false}
                   draggable={false}
                   showDots={false}
@@ -49,28 +90,56 @@ const Home = (props) => {
                   ssr={true} // means to render carousel on server-side.
                   infinite={true}
                   autoPlay= {true}//{this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={1500}
+                  autoPlaySpeed={2500}
                   keyBoardControl={true}
                   customTransition="all .5s"
                   transitionDuration={500}
                   containerClass="carousel-container"
-                  removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
+                  // removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
                   // deviceType={this.props.deviceType}
                   dotListClass="custom-dot-list-style"
                   itemClass="carousel-item-padding-40-px"
                   className="carousel-home"
-                  >
-                    <div><img src='assets/images/318x180.svg' width='100%'/></div>
-                    <div><img src='assets/images/318x180.svg' width='100%'/></div>
-                    <div><img src='assets/images/318x180.svg' width='100%'/></div>
-                    <div><img src='assets/images/318x180.svg' width='100%'/></div>
-                  </Carousel>
-              <CardBody>
-                <CardTitle tag="h5">About Us</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-              </CardBody>
-            </Card> */}
+              >
+                {products}
+            </Carousel>
+      </div>
+
+      {/* <Parallax strength={600}>
+        <Background>
+          <img src='assets/images/stock/home-about-cut.png' alt="home-about-img" />
+        </Background>
+        <div className='home-about-container'>
+          <div className="home-about-content">
+          We are a group of experts in the field of Power Products, 
+          and we have been providing Power Solutions to our 
+          varied Customer Base since 1995.
+          We cater the need of end users as well as dealers
+          </div>
+          <div className='home-about-know-more'>
+            <Link to={process.env.PUBLIC_URL+'/aboutus'} className='home-card-link'>Know More</Link>
+          </div>
+        </div>
+      </Parallax> */}
+      <div className='home-about-container'>
+        <div className="home-about-image">
+          <img className='window-home-about-img' width='100%' src='assets/images/stock/home-about-cut.png'></img>
+          <img className='mobile-home-about-img' width='100%' src='assets/images/stock/home-about-mobile.jpg'></img>
+        </div>
+        <div className="home-about-content">
+        We are a group of experts in the field of Power Products, 
+        and we have been providing Power Solutions to our 
+        varied Customer Base since 1995.
+        We cater the need of end users as well as dealers
+        </div>
+        <div className='home-about-know-more'>
+          <Link to={process.env.PUBLIC_URL+'/aboutus'} className='home-card-link'>Know More</Link>
+        </div>
+      </div>
+      {/* <Container>
+        <Row>
+          <Col>
+          
             <FadeInLeftDiv time="2s">
             <Carousel
                   swipeable={false}
@@ -109,14 +178,11 @@ const Home = (props) => {
               </div>
             </FadeInLeftDiv>
             
-            
-          {/* </Link> */}
           <hr/>
           </Col>
         </Row>
         <Row style={{"overflow-x":"hidden"}}>
           <Col data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" md='6' data-aos-offset="160">
-            {/* <Link to={process.env.PUBLIC_URL+'/products'} className='link'> */}
               <div className="image image-colorize"><img src='assets/images/318x180.svg' width='100%'/></div>
                 <h5 className="home-card-heading">Products</h5>
               <div className="home-card-content">
@@ -125,15 +191,7 @@ const Home = (props) => {
                   <Link to={process.env.PUBLIC_URL+'/products'} className='home-card-link'>Know More</Link>
                 </div>
               </div>
-              {/* <Card>
-                <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
-                <CardBody>
-                  <CardTitle tag="h5">Our Products</CardTitle>
-                  <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                </CardBody>
-              </Card> */}
-            {/* </Link> */}
+              
           </Col>
           <Col data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" md='6' data-aos-offset="160">
             <div className="image image-colorize"><img src='assets/images/318x180.svg' width='100%'/></div>
@@ -144,20 +202,11 @@ const Home = (props) => {
                 <Link to={process.env.PUBLIC_URL+'/contact'} className='home-card-link'>Know More</Link>
               </div>
             </div>
-            {/* <Link to={process.env.PUBLIC_URL+'/contact'} className='link'>
-              <Card>
-                <CardImg top width="100%" src='assets/images/318x180.svg' alt="Card image cap" />
-                <CardBody>
-                  <CardTitle tag="h5">Contact Us</CardTitle>
-                  <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                </CardBody>
-              </Card>
-            </Link> */}
+            
 
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </div>
   );
 };

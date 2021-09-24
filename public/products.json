@@ -2,7 +2,8 @@
     {
         "id":0,
         "name":"True Online UPS",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
+        "small_image": ["assets/images/products/true on line 1 ph-1ph out-small - 00 - sq.png","assets/images/products/pfc on line-small - 00 - sq.png"],
+        "image": ["assets/images/products/true on line 1 ph-1ph out-medium - 00 - sq.png","assets/images/products/pfc on line-medium - 00 - sq.png"],
         "description": "1 Phase in - 1 Phase out (Half Electricity Consuming) | Available in 1-10KVA",
         "features": ["LCD Display","Active Power Factor Correction","Customization Available","User Configurable","All in One Single Card with DSP controller","Communication (Optional)","Inbuilt isolation Transformer(Above 3KVA)","Single Card Including Inverter, Charger & Power Device"],
         "specifications": [
@@ -31,7 +32,8 @@
     {
         "id":1,
         "name":"3 Phase Lift UPS",
-        "image": "assets/images/318x180.svg",
+        "small_image": ["assets/images/products/pfc on line-small - 00 - sq.png"],
+        "image": ["assets/images/products/pfc on line-medium - 00 - sq.png"],
         "description": "Available in 6-20 KVA",
         "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
         "specifications": [
@@ -60,7 +62,8 @@
     {
         "id":2,
         "name":"On Line UPS",
-        "image": "assets/images/products/on line ups-sarthi.png",
+        "small_image": ["assets/images/products/on line ups-sarthi-small - 02 - sq.png"],
+        "image": ["assets/images/products/on line ups-sarthi-medium - 02 - sq.png"],
         "description": "Isolation Based 3 Phase in - 1 Phase out | 7.5-25KVA",
         "features": ["DPS based design Pure Sine Wave","Ethernet based monitoring (Optional)","Robust Design - 20 years Product Life","High Efficiency & high Reliability","User Friendly Display","Available from 7.5KVA to 25 KVA","High Surge Capability (upto 300%) for starting Heavy Load","Tested as per ICE 61683 & ICE 60068-2 (1,2,14,30) standards","AC & DC parameter Configurable from LCD"],
         "specifications": [
@@ -88,262 +91,281 @@
     },
     {
         "id":3,
-        "name":"Servo Voltage Stabaliser (1Ø-3Ø)",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"On Linr UPS",
+        "small_image": ["assets/images/products/on line ups-sarthi3-3-small - 03 - sq.png"],
+        "image": ["assets/images/products/on line ups-sarthi3-3-medium - 03 - sq.png"],
+        "description": "Isolation Based 3 Phase in - 3 Phase out | 7.5-100KVA",
+        "features": ["DSP based design Pure Sine Wave","Ethernet based monitoring(Optional)","Thermal Protection","Robust Design-20years Product Life","Noiseless in Operation","High Surge Capability (up to 300%)for starting Heavy Load","Tested as per IEC 61683 & IEC 60068-2(1,2,14,30) standards"],
         "specifications": [
             {
                 "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_detail":["7.5kV","10kVA","15kVA","20kVA","25kVA","30kVA","40kVA","50kVA","60kVA"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Input DC Voltage",
+                "spec_detail":["240V","360V"]
             },
             {
                 "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_detail":["50Hz ± 10%"]
             },
             {
                 "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_detail":[">0.92"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Output Voltage",
+                "spec_detail":["380V/400V/415V±1% (3Phase -4Wire)"]
             }
         ]
     },
     {
         "id":4,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Servo Voltage Stabiliser (3 Phase)",
+        "small_image": ["assets/images/products/servo volatege THree  phase-small - 04 - sq.png","assets/images/products/servo volatege single phase-1-small - 04 - sq.png","assets/images/products/servo volatege m p based-medium - 04 - sq.png"],
+        "image": ["assets/images/products/servo volatege THree  phase-medium - 04 - sq.png","assets/images/products/servo volatege single phase-1-medium - 04 - sq.png","assets/images/products/servo volatege m p based-medium - 04 - sq.png"],
+        "description": "Oil Cooled (25kVA-750kVA) and Air Cooled (3kVA-100kVA) are available.",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Input Range",
+                "spec_detail":["Regular 290-470 VAC","ECCO 340-470 VAC","WR 240-520 VAC"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Output Range",
+                "spec_detail":["415 VAC for Three Phase (Adjustable & unbalance type)"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_name":"Capacity",
+                "spec_detail":["3.0 KVA to 750 KVA 3Ø) (AirCooled / Oil Cooled)"]
             },
             {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_name":"Supply Frequency",
+                "spec_detail":["47-53 Hz"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Efficiency",
+                "spec_detail":["Better than 98%"]
             }
         ]
     },
     {
         "id":5,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Servo Voltage Stabiliser (Single Phase)",
+        "small_image": ["assets/images/products/servo volatege single phase-2-small-05 - sq.png","assets/images/products/servo volatege single phase-small-05 - sq.png"],
+        "image": ["assets/images/products/servo volatege single phase-2-medium-05 - sq.png","assets/images/products/servo volatege single phase-medium-05 - sq.png"],
+        "description": "Available in ranges 1kVA to 25kVA",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Input Range",
+                "spec_detail":["Regular 170 - 270 VAC","Wide Range 750 - 1800 x 2250 x 1300 VAC"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Output Volt",
+                "spec_detail":["230 ± 1% VAC"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_name":"Efficency",
+                "spec_detail":[">95%"]
             },
             {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
-            },
-            {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Capacity",
+                "spec_detail":["1KVa to 25 KVA"]
             }
         ]
     },
     {
         "id":6,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Constant Voltage Transformer (CVT)",
+        "small_image": ["assets/images/products/CVT-small - 06 - sq.png"],
+        "image": ["assets/images/products/CVT-medium - 06 - sq.png"],
+        "description": "Available for 1 Phase and 3 Phase in 150 VA to 5 KVA range. CUSTOMISATION AVAILABLE",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Capacity",
+                "spec_detail":["150 VA to 5 KVA"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Input",
+                "spec_detail":["160V - 280 VAC"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_name":"Output",
+                "spec_detail":["230 ± 1%"]
             },
             {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_name":"Freq",
+                "spec_detail":["50Hz"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"EfficIency",
+                "spec_detail":["85%(With Full Load)"]
             }
         ]
     },
     {
         "id":7,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Ultra Isolation Transformer (UIT)",
+        "small_image": ["assets/images/products/x maer images-small - 07 - sq.png"],
+        "image": ["assets/images/products/x maer images-medium - 07 - sq.png"],
+        "description": "Available for 1 Phase and 3 Phase in 150 VA to 500 KVA range. CUSTOMISATION AVAILABLE",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Capacity",
+                "spec_detail":["150 VA to 25 KVA (1Ø)","3KVA to 500 KVA (3in-3out/3in-1out)"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Efficency",
+                "spec_detail":[">95%"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
-            },
-            {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
-            },
-            {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Coupling Capacitance",
+                "spec_detail":["0.005 to 0.009 PF"]
             }
         ]
     },
     {
         "id":8,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Digital Power Conditioner",
+        "small_image": ["assets/images/products/pfc on line-small - 00 - sq.png"],
+        "image": ["assets/images/products/pfc on line-medium - 00 - sq.png"],
+        "description": "Available in Ranges 500VA to 5kVA",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Capacity",
+                "spec_detail":["500 VA to 5 KVA"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Input",
+                "spec_detail":["170V - 270 VAC","150 -290 VAC"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_name":"Output",
+                "spec_detail":["230 ± 5% V"]
             },
             {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_name":"Rate of Correction",
+                "spec_detail":["450 Volts / Second"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"EfficIency",
+                "spec_detail":[">98%"]
             }
         ]
     },
     {
         "id":9,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Automatic Voltage Corrector",
+        "small_image": ["assets/images/products/Digital Voltage Stabiliser-small - 09 - sq.png"],
+        "image": ["assets/images/products/Digital Voltage Stabiliser-medium - 09 - sq.png"],
+        "description": "Available in capacity of 0.25 KVA to 10.00 KVA",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Models",
+                "spec_detail":["Automatic / Manual"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Capacity",
+                "spec_detail":["0.25 KVA to 10.00 KVA"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_name":"Input",
+                "spec_detail":["170-270","140-300","100-300"]
             },
             {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_name":"Output",
+                "spec_detail":["230 ± 9% VAC"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Efficency",
+                "spec_detail":[">95%"]
             }
         ]
     },
     {
         "id":10,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Power Strip",
+        "small_image": ["assets/images/products/pfc on line-small - 00 - sq.png"],
+        "image": ["assets/images/products/pfc on line-medium - 00 - sq.png"],
+        "description": "Available in 5 Amp capacity",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Capacity",
+                "spec_detail":["5 Amp"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Outlets",
+                "spec_detail":["Five (3 Socket - 5AMP Plug + 1 Socket - 15 AMP Plug +1 Socket 2 Pin Plug )"]
             },
             {
-                "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
-            },
-            {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
-            },
-            {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Indication",
+                "spec_detail":["Mains Fault Detector"]
             }
         ]
     },
     {
         "id":11,
-        "name":"prod name",
-        "image": "assets/images/products/true on line 1 ph-1ph out.png",
-        "description": "The product is  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et varius erat, at aliquet elit. Lorem ipsum ",
-        "features": ["High Reliability with DSP Sine Wave Technology","Less Maintenance & Eco Friendly","Load Sensing with Smart Control","Display All parameters with LED Indications","Facility for Manual Bypass"],
+        "name":"Line-Interactive UPS Systems",
+        "small_image": ["assets/images/products/pfc on line-small - 00 - sq.png"],
+        "image": ["assets/images/products/pfc on line-medium - 00 - sq.png"],
+        "description": "Special UPS for Elevator & Weighing Systems. Available in 0.5 to 2,5 kVA",
+        "features": [],
         "specifications": [
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["6kVA","8kVA","10kVA","15kVA","20kVA"]
+                "spec_name":"Capacity",
+                "spec_detail":["0.5 KVA to 2.5 KVA"]
             },
             {
-                "spec_name":"DC Voltage",
-                "spec_detail":["72 V DC","96 V DC","120 V DC","180 V DC","240 V DC"]
+                "spec_name":"Input",
+                "spec_detail":["165V - 280 VAC"]
             },
             {
                 "spec_name":"Frequency",
-                "spec_detail":["50/60±5%"]
+                "spec_detail":["50Hz ± 3Hz"]
             },
             {
-                "spec_name":"Input Power Factor",
-                "spec_detail":["0.95 @ up tp 120VDC, 0.84 @ 180VDC"]
+                "spec_name":"Output",
+                "spec_detail":["230 ± 6% V"]
             },
             {
-                "spec_name":"Power Rating",
-                "spec_detail":["3.0 A","6.0 A","10.4 A","15 A","17.3 A","26.0 A","34.7 A"]
+                "spec_name":"Efficency",
+                "spec_detail":[">95%"]
+            }
+        ]
+    },
+    {
+        "id":12,
+        "name":"Digital Inverter (Home UPS)",
+        "small_image": ["assets/images/products/home ups new lokk -small - 12 - sq.png","assets/images/products/DSP SINE WAVES-small - 12 - sq.png"],
+        "image": ["assets/images/products/home ups new lokk - 12 - sq.png","assets/images/products/DSP SINE WAVES-medium - 12 - sq.png"],
+        "description": "Available in 150VA to 10KVA. Special models available for Computer.",
+        "features": [],
+        "specifications": [
+            {
+                "spec_name":"Capacity",
+                "spec_detail":["150 VA to 10 KVA"]
+            },
+            {
+                "spec_name":"Input",
+                "spec_detail":["165V - 280 VAC"]
+            },
+            {
+                "spec_name":"DC Voltage",
+                "spec_detail":["12V","24V","36V","180V"]
+            },
+            {
+                "spec_name":"Output",
+                "spec_detail":["230 ± 5% V"]
+            },
+            {
+                "spec_name":"Efficency",
+                "spec_detail":[">85%"]
             }
         ]
     }

@@ -11,7 +11,7 @@ export const Nav = styled.div`
     font-size: 1rem;
     position: sticky;
     top:0;
-    margin-bottom:20px;
+    // margin-bottom:20px;
     z-index:11;
 
     @media screen and (max-width: 992px) {
@@ -44,6 +44,7 @@ export const NavbarContainer = styled.div`
     }
     @media screen and (min-width:1400px){
       max-width:1320px;
+      font-size: 1.35rem;
     }
 `;
 
@@ -57,6 +58,10 @@ export const NavLogo = styled(Link)`
     // margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    @media screen and (min-width:1400px){
+      font-size: 1.7rem;
+    }
 
     &:hover{
       color:#fff;

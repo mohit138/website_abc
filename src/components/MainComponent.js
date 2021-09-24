@@ -85,6 +85,15 @@ class Main extends Component {
             this.mainColSize = 8;
         }
 
+        const HomeComponent = () => {
+            return(
+                <Home products={this.props.products.products}
+                productsLoading={this.props.products.isLoading}
+                productsErrMess={this.props.products.errMess}
+                />
+            );
+        }
+
         const ProductWithId = ({match}) => {
             return(
                 <ProductDetails 
@@ -132,27 +141,14 @@ class Main extends Component {
                 <Navbar open={this.state.open} setOpen={this.setOpen} />
                 
                 {/* <Header /> */}
-
-                <Container>
-                    <Row>
-                        <Col lg={this.mainColSize}>
-                            
-                            <Switch>
-                                <Route exact path={process.env.PUBLIC_URL+'/'} component={Home} />
-                                <Route exact path={process.env.PUBLIC_URL+'/aboutus'} component={AboutUsPage} />
-                                <Route exact path={process.env.PUBLIC_URL+'/products'} component={ProductsPage} />
-                                <Route exact path={process.env.PUBLIC_URL+ '/contact'} component={()=> <Contact resetFeedbackForm={this.props.resetFeedbackForm}/> } />
-                                <Route exact path={process.env.PUBLIC_URL+'/products/:id'} component={ProductWithId} /> 
-                            </Switch>
-                            {/* <Route><AboutUs /></Route> */}
-                        </Col>
-                        <Col lg='4' className='d-none d-lg-block'>
-                            {/* <ProductsList url={window.location.pathname} prods={this.state.prods} /> */}
-                            <Route component={ProductListPart} />
-                                
-                        </Col>
-                    </Row>
-                </Container>
+                <Switch>
+                    <Route exact path={process.env.PUBLIC_URL+'/'} component={HomeComponent} />
+                    <Route exact path={process.env.PUBLIC_URL+'/aboutus'} component={AboutUsPage} />
+                    <Route exact path={process.env.PUBLIC_URL+'/products'} component={ProductsPage} />
+                    <Route exact path={process.env.PUBLIC_URL+ '/contact'} component={()=> <Contact resetFeedbackForm={this.props.resetFeedbackForm}/> } />
+                    <Route exact path={process.env.PUBLIC_URL+'/products/:id'} component={ProductWithId} /> 
+                </Switch>
+                
                 <Footer />
             </div>
         );

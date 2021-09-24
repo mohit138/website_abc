@@ -1,15 +1,24 @@
-import React from 'react';
-import { Media, Row, Col, Button  } from 'reactstrap';
+import React, {useState} from 'react';
+import { Media, Row, Col, Button, Container  } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
 import { Table } from 'reactstrap';
-import { Carousel } from 'react-multi-carousel';
+// import { Carousel } from 'react-multi-carousel';
+import {
+    Carousel,
+    CarouselItem,
+    CarouselControl,
+    CarouselIndicators,
+    CarouselCaption
+  } from 'reactstrap';
 
 
 
 
 
 const ProductDetails = (props) => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animating, setAnimating] = useState(false);
 
     if(props.product!=null)
     {   
@@ -81,9 +90,9 @@ const ProductDetails = (props) => {
         
 
         const FeaturesBlock = () => {
-            // console.log(props.product.features);
+            // console.log(props.product.features.length);
 
-            if(props.product.features===null)
+            if(props.product.features.length===0)
             {    return(
                     <span></span>
                 );
@@ -108,14 +117,44 @@ const ProductDetails = (props) => {
             }
         }
 
-        
+        const next = () => {
+            if (animating) return;
+            const nextIndex = activeIndex === props.product.image.length - 1 ? 0 : activeIndex + 1;
+            setActiveIndex(nextIndex);
+        }
+
+        const previous = () => {
+            if (animating) return;
+            const nextIndex = activeIndex === 0 ? props.product.image.length - 1 : activeIndex - 1;
+            setActiveIndex(nextIndex);
+        }
+        const slides = props.product.image.map((img) => {
+            return (
+            <CarouselItem
+                onExiting={() => setAnimating(true)}
+                onExited={() => setAnimating(false)}
+                key={img}
+            >
+                <img className="product-detail-image" src={baseUrl + img} alt={img} />
+            </CarouselItem>
+            );
+          });
 
         return (
             <div>
+                <Container>
                 <Media>
                     <Media className="product-detail-img-wrapper">
-                        
-                        <Media className="product-detail-image" object src={baseUrl + props.product.image} alt="e" />
+                        <Carousel
+                            activeIndex={activeIndex}
+                            next={next}
+                            previous={previous}
+                            >
+                            {slides}
+                            {/* <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                            <CarouselControl direction="next" directionText="Next" onClickHandler={next} /> */}
+                        </Carousel>
+                        {/* <Media className="product-detail-image" object src={baseUrl + props.product.image[0]} alt="e" /> */}
                     </Media>
                     <Media body>
                         <Media heading>
@@ -136,7 +175,7 @@ const ProductDetails = (props) => {
                         </Row>
                     </Media>
                 </Media>
-               
+                </Container>
             </div>
         );
     }
