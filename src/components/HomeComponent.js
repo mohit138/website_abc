@@ -58,8 +58,8 @@ const Home = (props) => {
 
   return (
     <div>
-      
-      <Parallax strength={600}>
+      <div className="home-hero-parallax">
+      <Parallax strength={500}>
       <Background className="custom-bg">
             <img src='assets/images/stock/hero.jpg' alt="hero-img" />
       </Background>
@@ -68,7 +68,20 @@ const Home = (props) => {
           <div>We Are Here To Facilitate Uninterrupted Productivity</div>
       </div>
       </div>
-        </Parallax>
+      </Parallax>
+      </div>
+      <div className="home-hero-parallax-mobile">
+      <Parallax strength={600}>
+      <Background className="custom-bg">
+            <img src='assets/images/stock/hero-mobile.jpg' alt="hero-img" />
+      </Background>
+      <div className='hero-container'>
+      <div className='hero-heading'>
+          <div>We Are Here To Facilitate Uninterrupted Productivity</div>
+      </div>
+      </div>
+      </Parallax>
+      </div>
         
       {/* <div className='hero-container'>
         

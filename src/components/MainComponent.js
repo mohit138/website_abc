@@ -57,6 +57,8 @@ class Main extends Component {
     // }
 
     setOpen(opn){
+        console.log(!opn);
+        console.log(opn);
         this.setState({open : !opn})
     }
 
@@ -76,7 +78,6 @@ class Main extends Component {
 
     render(){
 
-        
         if(window.location.pathname === process.env.PUBLIC_URL+'/products')
         {
             this.mainColSize = 12;

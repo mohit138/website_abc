@@ -28,14 +28,18 @@ const Navbar = ({ open, setOpen}) => {
     //Javascript split method to get the name of the path in array
     const splitLocation = pathname.split("/");
 
-    
+    function closeSidebar(open) {
+        if(open===true){
+            setOpen(open);
+        }
+    }
     
 
     return (
         
                <Nav>
                     <NavbarContainer>
-                        <NavLogo  to={process.env.PUBLIC_URL+"/"}>
+                        <NavLogo  to={process.env.PUBLIC_URL+"/"} onClick={() => closeSidebar(open)}>
                         <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" />
                         <span className='nav-head'>ABC POWER SYSTEMS</span>
                         
