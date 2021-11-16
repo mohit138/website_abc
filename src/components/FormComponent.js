@@ -90,7 +90,7 @@ export const FormComponent = () => {
         </Row>
         <Row>
             <Col lg={{size:9, offset:3}}>
-                <Button type="submit" onClick={handleShow} color="primary">
+                <Button className="button-custom" type="submit" onClick={handleShow} color="primary">
                 Send Feedback
                 </Button>
             </Col>

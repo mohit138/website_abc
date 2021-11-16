@@ -167,7 +167,7 @@ const ProductDetails = (props) => {
                         <Row >
                             <Col xs={{size:9, offset:3}}>
                             <a href={baseUrl + "assets/Catalogue.pdf"} download>
-                                <Button color="primary">
+                                <Button className="button-custom" color="primary">
                                     Click for Detailed Specifications
                                 </Button>
                             </a>

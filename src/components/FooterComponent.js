@@ -32,7 +32,8 @@ const Footer = () => {
                         <a className='link-footer' href="mailto: sarthi_abc@yahoo.com"><FaEnvelope /> sarthi_abc@yahoo.com</a> 
                     </Col>
                     
-                    <Col>© Copyright 2021. ABC Power Systems. All Rights Reserved.</Col>
+                    <Col xs={12}>© Copyright 2021. ABC Power Systems. All Rights Reserved.</Col>
+                    <Col xs={12}><a className='link-footer' target="_blank" href="https://www.linkedin.com/in/mohitgidwani13">Made By Mohit</a></Col>
                 </Row>
             </Container>
         </div>

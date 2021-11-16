@@ -151,7 +151,7 @@ export const NavLinks = styled(Link)`
   cursor: pointer;
 
   &.active {
-      border-bottom: 5px solid lightblue;
+      border-bottom: 5px solid rgb(210,210,210);
       transition: all 0.2s ease-in-out;
       color:#ccc;
   }

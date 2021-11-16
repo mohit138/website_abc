@@ -34,7 +34,7 @@
 }
 
 .link:hover{
-  color: grey;
+  color: rgb(80, 80, 80);
   transition: 0.3s ease-in-out;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .active{
-  color: rgb(199, 199, 199);
+  color: rgb(221, 221, 221);
 }
 
 .jumbo-container{
@@ -230,7 +230,7 @@
   font-size: 40px;
   top: 44%;
   left:18%;
-  width: 50%;
+  width: 52%;
   color: white;
 }
 
@@ -240,6 +240,33 @@
   bottom:10%;
   font-size: 25px;
   font-weight: 550;
+}
+.home-about-link{
+  position:relative;
+  padding-bottom: 5px;
+  color:white;
+  text-decoration: none;
+}
+.home-about-link:hover{
+  color: white;
+}
+
+.home-about-link:before{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  bottom: 0;
+  left: 20%;
+  background-color: rgb(255, 255, 255);
+  /* visibility: hidden; */
+  transition: all 0.4s ease-in-out;
+}
+.home-about-link:hover::before{
+  /* visibility: visible; */
+  color: white;
+  width:100%;
+  left: 0;
 }
 
 .image{
@@ -365,6 +392,7 @@ margin-top: 20px;
 .link-footer {
   color: cornsilk; 
   text-decoration: none;
+  padding: 3px 0;
 }
 
 .link-footer:hover{
@@ -519,6 +547,22 @@ margin-top: 20px;
   margin-bottom: 5px;
   height: 80%;
 }
+
+/* BUTTON */
+.button-custom {
+  color:white;
+  background-color:black;
+  border: black 2px solid;
+  margin-bottom:10px;
+  transition: all 0.4s ease-in-out;
+}
+.button-custom:hover{
+  color:black;
+  background-color: white;
+  
+  border: black 2px solid;
+}
+
 
 @media only screen and (min-width:1441px){
 
@@ -855,11 +899,11 @@ margin-top: 20px;
     font-size: 27px;
   }
   .home-product-description{
-    top:12%;
-    font-size: 18px;
+    top:14%;
+    font-size: 17px;
   }
   .home-product-more{
-    top: 25%;
+    top: 27%;
     font-size: 14px;
   }
   .home-about-container{
@@ -867,7 +911,8 @@ margin-top: 20px;
   }
   .home-about-content{
     top:10%;
-    font-size:20px;
+    font-size:22px;
+    width: 60%;
   }
   .home-about-know-more{
     font-size:14px;
@@ -876,5 +921,8 @@ margin-top: 20px;
   .about-img img{
     width: 180%;
     margin-left: -20%;
+  }
+  .footer{
+    font-size: .9rem;
   }
 }

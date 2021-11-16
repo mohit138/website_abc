@@ -37,12 +37,12 @@ const Home = (props) => {
 
 
   const products = props.products.map((product)=>{
-    console.log(product.image);
+    // console.log(product.image);
     return(
         <div className='home-product'>
           <Link to={process.env.PUBLIC_URL+`/products/${product.id}`} className='home-product-link'>
           <div className='home-product-image'>
-            <img width='100%' src={product.image[0]}></img>
+            <img width='100%' alt="ABC Power Systems"  src={product.image[0]}></img>
           </div>
           <div className='home-product-content'>
             <div className='home-product-heading'>{product.name}</div>
@@ -61,7 +61,7 @@ const Home = (props) => {
       <div className="home-hero-parallax">
       <Parallax strength={500}>
       <Background className="custom-bg">
-            <img src='assets/images/stock/hero.jpg' alt="hero-img" />
+            <img alt="ABC Power Systems"  src='assets/images/stock/hero.jpg' alt="hero-img" />
       </Background>
       <div className='hero-container'>
       <div className='hero-heading'>
@@ -73,7 +73,7 @@ const Home = (props) => {
       <div className="home-hero-parallax-mobile">
       <Parallax strength={600}>
       <Background className="custom-bg">
-            <img src='assets/images/stock/hero-mobile.jpg' alt="hero-img" />
+            <img alt="ABC Power Systems"  src='assets/images/stock/hero-mobile.jpg' alt="hero-img" />
       </Background>
       <div className='hero-container'>
       <div className='hero-heading'>
@@ -146,7 +146,7 @@ const Home = (props) => {
         We cater the need of end users as well as dealers
         </div>
         <div className='home-about-know-more'>
-          <Link to={process.env.PUBLIC_URL+'/aboutus'} className='home-card-link'>Know More</Link>
+          <Link to={process.env.PUBLIC_URL+'/aboutus'} className='home-about-link'>Know More</Link>
         </div>
       </div>
       {/* <Container>

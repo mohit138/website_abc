@@ -62,13 +62,13 @@ const AboutUs = (props) => {
               <h1 className="about-heading">About Us</h1>
               <div className="about">
               <div className="about-img" >
-                <img src='assets/images/stock/about.jpg' alt="ABC Power" />
+                <img src='assets/images/stock/about.jpg' alt="ABC Power Systems" />
               </div>
               <div className="about-content">
               We are a group of experts in the field of Power Products, and we have been providing Power Solutions to our varied Customer Base since 1995.
               Our values drive us to strive for excellence, which enables us to continuously improve business processes, products and services. 
               <br/><br/>
-              We offer an extensive range of products including Online UPS, Offline UPS, Stabilizers, Transformers and Correctors; 
+              ABC Power Systems offers an extensive range of products including Online UPS, Offline UPS, Stabilizers, Transformers and Correctors; 
               enabling us to accommodate all the needs of our customers up to their satisfaction.
               <br/><br/>
               Our trained and dedicated Technical Team consists of experts in the field. Combine that with our years of experience, and the result is an extraordinary experience for our customers.
