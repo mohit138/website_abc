@@ -3,7 +3,7 @@
         "id":0,
         "name":"True Online UPS",
         "small_image": ["assets/images/products/true on line 1 ph-1ph out-small - 00 - sq.png","assets/images/products/pfc on line-small - 00 - sq.png"],
-        "image": ["assets/images/products/true on line 1 ph-1ph out-medium - 00 - sq.png","assets/images/products/pfc on line-medium - 00 - sq.png"],
+        "image": ["assets/images/products/true on line 1 ph-1ph out-medium - 00 - sq.png"],
         "description": "1 Phase in - 1 Phase out (Half Electricity Consuming) | Available in 1-10KVA",
         "features": ["LCD Display","Active Power Factor Correction","Customization Available","User Configurable","All in One Single Card with DSP controller","Communication (Optional)","Inbuilt isolation Transformer(Above 3KVA)","Single Card Including Inverter, Charger & Power Device"],
         "specifications": [

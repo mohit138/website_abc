@@ -478,7 +478,13 @@ margin-top: 20px;
 .product-detail-image{
   max-width:100%;
   max-height: 500px; 
+  transition: 0.6s ease-in-out;
 }
+.product-detail-image:hover{
+  filter: drop-shadow(10px 10px 10px #868686);
+  transform:translate(0,-10px);
+}
+
 
 .product-detail-img-wrapper{
   text-align: center;
@@ -561,6 +567,14 @@ margin-top: 20px;
   background-color: white;
   
   border: black 2px solid;
+}
+
+.button-custom:active{
+  background-color:black;
+}
+.button-custom:focus{
+  background-color:black;
+  color:white;
 }
 
 

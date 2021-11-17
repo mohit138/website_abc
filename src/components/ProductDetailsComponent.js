@@ -3,6 +3,7 @@ import { Media, Row, Col, Button, Container  } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
 import { Table } from 'reactstrap';
+import { FadeInLeftDiv, FadeInRightDiv } from './AnimationsComponent';
 // import { Carousel } from 'react-multi-carousel';
 import {
     Carousel,
@@ -144,6 +145,7 @@ const ProductDetails = (props) => {
             <div>
                 <Container>
                 <Media>
+                    <FadeInLeftDiv time="2.5s">
                     <Media className="product-detail-img-wrapper">
                         <Carousel
                             activeIndex={activeIndex}
@@ -156,6 +158,7 @@ const ProductDetails = (props) => {
                         </Carousel>
                         {/* <Media className="product-detail-image" object src={baseUrl + props.product.image[0]} alt="e" /> */}
                     </Media>
+                    </FadeInLeftDiv>
                     <Media body>
                         <Media heading>
                         {props.product.name}
@@ -166,8 +169,8 @@ const ProductDetails = (props) => {
                         {specifications} 
                         <Row >
                             <Col xs={{size:9, offset:3}}>
-                            <a href={baseUrl + "assets/Catalogue.pdf"} download>
-                                <Button className="button-custom" color="primary">
+                            <a href={baseUrl + "assets/Catalogue-compressed.pdf"} download>
+                                <Button className="button-custom"  >
                                     Click for Detailed Specifications
                                 </Button>
                             </a>
